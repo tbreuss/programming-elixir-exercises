@@ -1,0 +1,8 @@
+iex(1)> [a,b,a] = [1,2,3]
+** (MatchError) no match of right hand side value: [1, 2, 3]
+
+iex(1)> [a,b,a] = [1,1,2]
+** (MatchError) no match of right hand side value: [1, 1, 2]
+
+iex(1)> [a,b,a] = [1,2,1]
+[1, 2, 1]
