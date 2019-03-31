@@ -1,17 +1,17 @@
-iex(1)> list_concat = fn list1, list2 -> list1 ++ list2 end
+iex> list_concat = fn list1, list2 -> list1 ++ list2 end
 #Function<12.128620087/2 in :erl_eval.expr/5>
 
-iex(2)> list_concat.([:a,:b],[:c,:d])
+iex> list_concat.([:a,:b],[:c,:d])
 [:a, :b, :c, :d]
 
-iex(3)> sum = fn a,b,c -> a + b + c end
+iex> sum = fn a,b,c -> a + b + c end
 #Function<18.128620087/3 in :erl_eval.expr/5>
 
-iex(4)> sum.(1,2,3)
+iex> sum.(1,2,3)
 6
 
-iex(5)> pari_tuple_to_list = fn {a, b} -> [a, b] end
+iex> pari_tuple_to_list = fn {a, b} -> [a, b] end
 #Function<6.128620087/1 in :erl_eval.expr/5>
 
-iex(6)> pari_tuple_to_list.({1234, 5678})
+iex> pari_tuple_to_list.({1234, 5678})
 [1234, 5678]

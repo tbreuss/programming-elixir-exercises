@@ -1,11 +1,11 @@
 First compiling technique:
 
-iex(1)> c "modules-and-functions-1.exs"
+iex> c "modules-and-functions-1.exs"
 
-iex(2)> Times.double(4)
+iex> Times.double(4)
 8
 
-iex(4)> Times.triple(3)
+iex> Times.triple(3)
 9
 
 Seconde compiling technique:
@@ -14,8 +14,8 @@ iex modules-and-functions-1.exs
 Erlang/OTP 21 [erts-10.3] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [hipe] [dtrace]
 Interactive Elixir (1.8.1) - press Ctrl+C to exit (type h() ENTER for help)
 
-iex(1)> Times.double(4)
+iex> Times.double(4)
 8
 
-iex(2)> Times.triple(3)
+iex> Times.triple(3)
 9
