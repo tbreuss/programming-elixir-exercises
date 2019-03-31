@@ -1,0 +1,23 @@
+# Convert a float to a string with two decimal digits. (Erlang)
+iex> :io_lib.format("~.2f",[3.23424323])
+'3.23'
+
+# Get the value of an operating-system environment variable. (Elixir)
+iex> System.get_env "LANG"
+"de_CH.UTF-8"
+
+# Return the extension component of a file name (so return .exs if given "dave/test.exs"). (Elixir)
+iex> Path.extname("dave/test.exs")
+".exs"
+
+# Return the process’s current working directory. (Elixir)
+iex> File.cwd
+{:ok,
+ "/Users/thomas/learning-elixir/programming-elixir/chapter-06"}
+
+# Convert a string containing JSON into Elixir data structures. (Just find; don’t install.)
+https://github.com/devinus/poison
+
+# Execute a command in your operating system’s shell.
+iex> System.cmd("echo", ["hello"])
+{"hello\n", 0}
