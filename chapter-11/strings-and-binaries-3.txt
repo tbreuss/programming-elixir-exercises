@@ -1,0 +1,14 @@
+iex> [ 'cat' | 'dog' ]
+['cat',100,111,103]
+
+iex> [[99, 97, 116] | [100, 111, 103]]
+['cat', 100, 111, 103]
+
+iex> ['dog'] ++ 'dog'
+['dog', 100, 111, 103]
+
+Result:
+We get this result because we have the 'cat' element and are appending a list of codepoints into this.
+While doing this we are leaving the 'cat' element untouched.
+
+Another explanation could be, that when we are writing [ 'cat' | 'dog' ] we have [ head | tail ] and the tail is appended to the head, leaving the head untouched.
