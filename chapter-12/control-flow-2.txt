@@ -1,0 +1,13 @@
+We now have three different implementations of FizzBuzz. 
+One uses cond, one uses case, and one uses separate functions with guard clauses.
+Take a minute to look at all three.
+
+1) Which do you feel best expresses the problem? 
+
+Both the case and the cond solution express the problem better because
+the solution is shaped within one methode within a few lines of code.
+
+2) Which will be easiest to maintain?
+
+The Guards solution because the problem is divided into small chunks of code.
+But more important, each of the methods is better testable and therefore maintainable.
