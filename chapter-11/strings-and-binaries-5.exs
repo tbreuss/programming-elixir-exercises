@@ -30,5 +30,11 @@ defmodule MyString do
 end
 
 MyString.center(["cat", "zebra", "elephant"])
-IO.puts "\n"
+#   cat
+#  zebra
+# elephant
+
 MyString.center(["short", "verylongword", "longword"])
+#    short
+# verylongword
+#   longword

@@ -23,3 +23,4 @@ defmodule MyString do
 end
 
 MyString.capitalize_sentences("oh. a DOG. woof. ")
+# Oh. A dog. Woof.
