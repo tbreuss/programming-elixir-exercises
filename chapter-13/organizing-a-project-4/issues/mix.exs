@@ -10,7 +10,7 @@ defmodule Issues.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       name: "Issues",
-      source_url: "https://github.com/pragdave/issues",
+      source_url: "https://github.com/pragdave/issues"
     ]
   end
 
