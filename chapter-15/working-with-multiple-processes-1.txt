@@ -1,0 +1,20 @@
+elixir -r chain.exs -e "Chain.run(10)"
+{3183, "Result is 10"}
+
+elixir -r chain.exs -e "Chain.run(100)"
+{3499, "Result is 100"}
+
+elixir -r chain.exs -e "Chain.run(1_000)" {8458, "Result is 1000"}
+{7726, "Result is 1000"}
+
+elixir -r chain.exs -e "Chain.run(10_000)" {66769, "Result is 10000"}
+{48614, "Result is 10000"}
+
+elixir -r chain.exs -e "Chain.run(400_000)"
+21:22:12.867 [error] Too many processes
+
+elixir --erl "+P 1000000" -r chain.exs -e "Chain.run(400_000)"
+{1651915, "Result is 400000"}
+
+elixir --erl "+P 1000000" -r chain.exs -e "Chain.run(1_000_000)"
+{4413971, "Result is 1000000"}
