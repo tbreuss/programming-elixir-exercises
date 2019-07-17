@@ -8,7 +8,6 @@ defmodule SpawnTest do
   end
 
   def run do
-
     # process 1
     pid1 = spawn(SpawnTest, :greet, [])
     send(pid1, {self(), "FRED"})
@@ -26,12 +25,10 @@ defmodule SpawnTest do
       {:ok, message} ->
         IO.puts(message)
     end
-
   end
 end
 
-SpawnTest.run
-
+SpawnTest.run()
 
 # Is the order in which the replies are received deterministic in theory? In practice?
 # No.  
