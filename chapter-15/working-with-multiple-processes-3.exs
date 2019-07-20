@@ -8,7 +8,7 @@ defmodule SpawnLink do
 
   def run do
     spawn_link(SpawnLink, :child, [self()])
-    
+
     sleep(500)
 
     receive do
