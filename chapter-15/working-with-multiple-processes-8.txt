@@ -1,0 +1,6 @@
+Run the Fibonacci code on your machine. Do you get comparable timings? If your machine has multiple cores and/or processors, do you see improvements in the timing as we increase the application’s concurrency?
+
+Yes, I get comparable timings.
+
+No, I don't see improvements by increasing the number of entries from 20 to 100.
+Have to do some more tests.
