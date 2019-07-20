@@ -1,0 +1,11 @@
+Change the ^pid in pmap to _pid. This means the receive block will take responses in the order the processes send them. Now run the code again. Do you see any difference in the output? If you’re like me, you don’t, but the program clearly contains a bug. Are you scared by this? Can you find a way to reveal the problem (perhaps by passing in a different function, by sleeping, or by increasing the number of processes)? Change it back to ^pid and make sure the order is now correct.
+
+If you increase the list size, you can see that the order changes something (see 196 below).
+
+iex(9)> Parallel.pmap 1..100, &(&1 * &1)
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 225, 256, 289, 361,
+ 196, 400, 324, 441, 529, 484, 625, 576, 784, 729, 841, 900, 676, 961,
+ 1089, 1024, 1296, 1369, 1444, 1600, 1521, 1156, 1681, 1225, 1764, 1849,
+ 2025, 2116, 2209, 2304, 2401, 2500, 2601, ...]
+
+After changing back to ^pid the order is always correct.
