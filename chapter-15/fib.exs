@@ -46,7 +46,7 @@ defmodule Scheduler do
   end
 end
 
-to_process = List.duplicate(37, 100)
+to_process = List.duplicate(37, 20)
 
 Enum.each(1..10, fn num_processes ->
   {time, result} =
